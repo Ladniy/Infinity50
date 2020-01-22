@@ -1,3 +1,0 @@
-Ladniy
-DESKTOP-DA1JOL5 
-6 ÿםגאנÿ 2020 ד.  3:25:22
