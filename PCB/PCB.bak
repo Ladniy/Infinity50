@@ -1778,10 +1778,4 @@ Wire Notes Line
 	11045 5000 11045 470 
 Text Notes 11050 4995 0    50   ~ 0
 Microcontroller\n
-Text Label 15175 2030 0    50   ~ 0
-SCK
-Text Label 15175 2130 0    50   ~ 0
-MOSI
-Text Label 15175 2230 0    50   ~ 0
-MISO
 $EndSCHEMATC
