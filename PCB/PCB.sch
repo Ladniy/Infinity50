@@ -2078,4 +2078,91 @@ NoConn ~ 1340 2705
 NoConn ~ 1350 2100
 Text Label 6500 1450 1    50   ~ 0
 P1.11
+Text Label 7000 1450 1    50   ~ 0
+P0.03
+Text Label 7500 1450 1    50   ~ 0
+P0.28
+Text Label 8000 1450 1    50   ~ 0
+P1.13
+Text Label 8500 1450 1    50   ~ 0
+P0.02
+Text Label 9000 1450 1    50   ~ 0
+P0.29
+Text Label 9500 1450 1    50   ~ 0
+P0.31
+Text Label 10000 1450 1    50   ~ 0
+P0.30
+Text Label 10500 1450 1    50   ~ 0
+P0.00
+Text Label 11000 1450 1    50   ~ 0
+P0.01
+Text Label 11500 1450 1    50   ~ 0
+P0.05
+Text Label 12000 1450 1    50   ~ 0
+P0.12
+Text Label 12500 1450 1    50   ~ 0
+P0.10
+Text Label 13000 1450 1    50   ~ 0
+P0.09
+Text Label 13500 1700 0    50   ~ 0
+P1.04
+Text Label 13000 2200 0    50   ~ 0
+P1.00
+Text Label 13000 2700 0    50   ~ 0
+P0.24
+Text Label 11500 3200 0    50   ~ 0
+P0.22
+Wire Wire Line
+	11500 3200 11400 3200
+Connection ~ 11400 3200
+Wire Wire Line
+	13000 2700 12900 2700
+Connection ~ 12900 2700
+Wire Wire Line
+	13000 2200 12900 2200
+Connection ~ 12900 2200
+Wire Wire Line
+	13500 1700 13400 1700
+Connection ~ 13400 1700
+Wire Wire Line
+	13000 1450 13000 1500
+Wire Wire Line
+	12500 1450 12500 1500
+Connection ~ 12500 1500
+Wire Wire Line
+	12000 1450 12000 1500
+Connection ~ 12000 1500
+Wire Wire Line
+	11500 1450 11500 1500
+Connection ~ 11500 1500
+Wire Wire Line
+	11000 1450 11000 1500
+Connection ~ 11000 1500
+Wire Wire Line
+	10500 1450 10500 1500
+Connection ~ 10500 1500
+Wire Wire Line
+	10000 1450 10000 1500
+Connection ~ 10000 1500
+Wire Wire Line
+	9500 1450 9500 1500
+Connection ~ 9500 1500
+Wire Wire Line
+	9000 1450 9000 1500
+Connection ~ 9000 1500
+Wire Wire Line
+	8500 1450 8500 1500
+Connection ~ 8500 1500
+Wire Wire Line
+	8000 1450 8000 1500
+Connection ~ 8000 1500
+Wire Wire Line
+	7500 1450 7500 1500
+Connection ~ 7500 1500
+Wire Wire Line
+	7000 1450 7000 1500
+Connection ~ 7000 1500
+Wire Wire Line
+	6500 1450 6500 1500
+Connection ~ 6500 1500
 $EndSCHEMATC
