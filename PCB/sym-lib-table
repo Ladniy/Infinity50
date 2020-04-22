@@ -11,4 +11,6 @@
   (lib (name josh-power)(type Legacy)(uri C:/Users/Ladniy/Desktop/Hub16-master/Hardware/josh-kicad-lib/josh-power.lib)(options "")(descr ""))
   (lib (name josh-rf)(type Legacy)(uri C:/Users/Ladniy/Desktop/Hub16-master/Hardware/josh-kicad-lib/josh-rf.lib)(options "")(descr ""))
   (lib (name PCB-rescue)(type Legacy)(uri ${KIPRJMOD}/PCB-rescue.lib)(options "")(descr ""))
+  (lib (name nrfmicro-rescue)(type Legacy)(uri C:/Users/Ladniy/Desktop/nrfmicro-master/hardware/nrfmicro-rescue.lib)(options "")(descr ""))
+  (lib (name nrfmicro)(type Legacy)(uri C:/Users/Ladniy/Desktop/nrfmicro-master/hardware/nrfmicro.lib)(options "")(descr ""))
 )
