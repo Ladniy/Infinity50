@@ -1898,7 +1898,7 @@ Wire Wire Line
 	9000 2000 9000 2500
 Connection ~ 9000 2500
 Wire Wire Line
-	9000 2500 9000 3000
+	9000 2500 9000 2920
 Wire Wire Line
 	9500 1500 9500 2000
 Connection ~ 9500 2000
@@ -2165,4 +2165,45 @@ Connection ~ 7000 1500
 Wire Wire Line
 	6500 1450 6500 1500
 Connection ~ 6500 1500
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EC49318
+P 9200 2920
+F 0 "SW?" H 9200 3095 50  0000 C CNN
+F 1 "SW_Push" H 9200 3114 50  0001 C CNN
+F 2 "" H 9200 3120 50  0001 C CNN
+F 3 "~" H 9200 3120 50  0001 C CNN
+	1    9200 2920
+	1    0    0    -1  
+$EndComp
+Connection ~ 9000 2920
+Wire Wire Line
+	9000 2920 9000 3000
+Wire Wire Line
+	9400 2920 9400 3000
+Connection ~ 9400 3000
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5EC53F12
+P 4680 5135
+F 0 "SW?" H 4680 5420 50  0000 C CNN
+F 1 "SW_Push" H 4680 5329 50  0000 C CNN
+F 2 "" H 4680 5335 50  0001 C CNN
+F 3 "~" H 4680 5335 50  0001 C CNN
+	1    4680 5135
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EC56230
+P 4880 5135
+F 0 "#PWR?" H 4880 4885 50  0001 C CNN
+F 1 "GND" V 4880 5015 50  0000 R CNN
+F 2 "" H 4880 5135 50  0001 C CNN
+F 3 "" H 4880 5135 50  0001 C CNN
+	1    4880 5135
+	0    -1   -1   0   
+$EndComp
+Text GLabel 4480 5135 0    50   Input ~ 0
+RESET
 $EndSCHEMATC
