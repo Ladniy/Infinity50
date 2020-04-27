@@ -60,7 +60,7 @@
     (pad_to_mask_clearance 0.051)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFF7FF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -2797,7 +2797,7 @@
   )
 
   (module nrfmicro:connector_swd (layer F.Cu) (tedit 5EA651A2) (tstamp 5EA8DBA6)
-    (at 42.5831 115.481)
+    (at 40.8813 116.3192)
     (path /5ED6D234)
     (fp_text reference J2 (at 0 -3.175) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2828,7 +2828,7 @@
   )
 
   (module nrfmicro:connectro_bat (layer B.Cu) (tedit 5EA65109) (tstamp 5EA6E9BC)
-    (at 40.8559 75.5777 270)
+    (at 21.9964 57.8485 90)
     (path /5DA92B59)
     (fp_text reference J3 (at 0 -1.7145 270) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2842,9 +2842,9 @@
     (fp_text user + (at -1.27 1.27 270) (layer B.SilkS)
       (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
     )
-    (pad 2 thru_hole circle (at 1.27 0 270) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+    (pad 2 thru_hole circle (at 1.27 0 90) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
       (net 1 GND))
-    (pad 1 thru_hole circle (at -1.27 0 270) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+    (pad 1 thru_hole circle (at -1.27 0 90) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
       (net 2 VBAT))
   )
 
@@ -6308,18 +6308,18 @@
   )
 
   (module Keebio-Parts:SW_SPST_TL3342 (layer B.Cu) (tedit 5D6E8EB5) (tstamp 5EA6EF28)
-    (at 43.0276 93.2307 270)
+    (at 51.2572 114.3127 180)
     (descr "Low-profile SMD Tactile Switch, https://www.e-switch.com/system/asset/product_line/data_sheet/165/TL3342.pdf")
     (tags "SPST Tactile Switch")
     (path /5EC53F12)
     (attr smd)
-    (fp_text reference SW50 (at 0 3.75 90) (layer Dwgs.User) hide
+    (fp_text reference SW50 (at 0 3.75) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -3.75 90) (layer B.Fab) hide
+    (fp_text value SW_Push (at 0 -3.75) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 3.75 90) (layer B.Fab) hide
+    (fp_text user %R (at 0 3.75) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 3.2 -2.1) (end 3.2 -1.6) (layer B.Fab) (width 0.1))
@@ -6367,13 +6367,13 @@
     (fp_line (start 4.25 -3) (end -4.25 -3) (layer B.CrtYd) (width 0.05))
     (fp_line (start -4.25 -3) (end -4.25 3) (layer B.CrtYd) (width 0.05))
     (fp_circle (center 0 0) (end 1 0) (layer B.Fab) (width 0.1))
-    (pad 1 smd rect (at -3.15 1.9 270) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
+    (pad 1 smd rect (at -3.15 1.9 180) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
       (net 91 RESET))
-    (pad 1 smd rect (at 3.15 1.9 270) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
+    (pad 1 smd rect (at 3.15 1.9 180) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
       (net 91 RESET))
-    (pad 2 smd rect (at -3.15 -1.9 270) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
+    (pad 2 smd rect (at -3.15 -1.9 180) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
-    (pad 2 smd rect (at 3.15 -1.9 270) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
+    (pad 2 smd rect (at 3.15 -1.9 180) (size 1.7 1) (layers B.Cu B.Paste B.Mask)
       (net 1 GND))
     (model ${KISYS3DMOD}/Button_Switch_SMD.3dshapes/SW_SPST_TL3342.step
       (at (xyz 0 0 0))
@@ -6455,7 +6455,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA87E54)
-    (at 32.1056 95.6818)
+    (at 32.9565 93.7133)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CD8C0A3)
@@ -6491,7 +6491,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA88124)
-    (at 21.5392 98.8441 180)
+    (at 21.59 97.6122 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CB84BCA)
@@ -6527,7 +6527,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA6EA3B)
-    (at 28.5877 95.6818)
+    (at 29.1592 93.7006)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CAA680B)
@@ -6563,7 +6563,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA6EA2A)
-    (at 32.1056 98.8441 180)
+    (at 32.9819 97.663 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CAA879F)
@@ -6635,7 +6635,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA882B5)
-    (at 28.5877 98.8441)
+    (at 29.1846 97.6503)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CB11C9D)
@@ -6671,7 +6671,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer B.Cu) (tedit 5B301BBD) (tstamp 5EA88074)
-    (at 21.5392 95.6818)
+    (at 21.5646 93.6625)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CB1AD7E)
@@ -6707,7 +6707,7 @@
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer B.Cu) (tedit 5A02FF57) (tstamp 5EA6E9E6)
-    (at 35.9537 97.2693 180)
+    (at 36.8046 95.6818 180)
     (descr "SOT-23, Standard")
     (tags SOT-23)
     (path /5CD72AAF)
@@ -6789,7 +6789,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5EA6E98E)
-    (at 18.5039 97.2693 90)
+    (at 18.5293 95.631 90)
     (descr SOD-123)
     (tags SOD-123)
     (path /5B158495)
@@ -6833,7 +6833,7 @@
   )
 
   (module LED_SMD:LED_0603_1608Metric (layer B.Cu) (tedit 5B301BBE) (tstamp 5EA87B2A)
-    (at 25.0317 98.8441)
+    (at 25.3873 97.6249)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags diode)
     (path /5CB11CA9)
@@ -6871,7 +6871,7 @@
   )
 
   (module LED_SMD:LED_0603_1608Metric (layer B.Cu) (tedit 5B301BBE) (tstamp 5EA87A70)
-    (at 25.0317 95.6818)
+    (at 25.3619 93.6752)
     (descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags diode)
     (path /5CB260DB)
@@ -7016,16 +7016,16 @@
     )
   )
 
-  (gr_text SWD (at 41.3004 113.9444) (layer B.SilkS) (tstamp 5EA8DEFF)
+  (gr_text SWD (at 39.5986 114.7826) (layer B.SilkS) (tstamp 5EA8DEFF)
     (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
   )
-  (gr_text SWC (at 38.7731 113.9571) (layer B.SilkS) (tstamp 5EA8DEFF)
+  (gr_text SWC (at 37.0713 114.7953) (layer B.SilkS) (tstamp 5EA8DEFF)
     (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
   )
-  (gr_text "-\n" (at 46.3931 113.9444) (layer B.SilkS) (tstamp 5EA8DEFF)
+  (gr_text "-\n" (at 44.6913 114.7826) (layer B.SilkS) (tstamp 5EA8DEFF)
     (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
   )
-  (gr_text + (at 43.8531 113.9444) (layer B.SilkS)
+  (gr_text + (at 42.1513 114.7826) (layer B.SilkS)
     (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
   )
   (gr_line (start 261.2517 97.42154) (end 211.201 97.42154) (layer Edge.Cuts) (width 0.05) (tstamp 5EA7DDC6))
