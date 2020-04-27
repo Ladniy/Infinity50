@@ -311,7 +311,7 @@
 
   (module Infinity:InfinityText (layer B.Cu) (tedit 5EA66A4C) (tstamp 5EA96A92)
     (at 231.3178 113.7412 180)
-    (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
+    (fp_text reference G3 (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_text value LOGO (at 0.75 0) (layer B.SilkS) hide
@@ -2007,7 +2007,7 @@
 
   (module Infinity:InfinityLogo (layer B.Cu) (tedit 5EA66078) (tstamp 5EA964A5)
     (at 269.0495 107.7976)
-    (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
+    (fp_text reference G1 (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_text value LOGO (at 0.75 0) (layer B.SilkS) hide
@@ -2488,7 +2488,7 @@
 
   (module Infinity:MechCultLogo (layer F.Cu) (tedit 5EA65EC4) (tstamp 5EA947AD)
     (at 269.0876 107.7976)
-    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
+    (fp_text reference G2 (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
@@ -2831,7 +2831,7 @@
     (at 34.8869 55.9308 270)
     (path /5DA92B59)
     (fp_text reference J3 (at 0 -1.7145 270) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Conn_01x02 (at 0 2.4765 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -6314,7 +6314,7 @@
     (path /5EC53F12)
     (attr smd)
     (fp_text reference SW50 (at 0 3.75 90) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value SW_Push (at 0 -3.75 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))

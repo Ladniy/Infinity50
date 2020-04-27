@@ -36,6 +36,10 @@
             29482.1 -36263.9  29584.7 -36185.2  29704.1 -36135.7  29832.3 -36118.8
             37477.7 -36118.8  37605.9 -36135.7)
     )
+    (plane @:no_net_0 (polygon F.Cu 0  281927 -118123  13931.9 -118123  13931.9 -35572.7  281927 -35572.7
+            281927 -118123))
+    (plane @:no_net_1 (polygon B.Cu 0  281927 -118123  13931.9 -118123  13931.9 -35572.7  281927 -35572.7
+            281927 -118123))
     (keepout "" (polygon signal 0  87845.9 -94259.4  84683.6 -97421.7  48933.1 -97421.6
             48737.3 -97440.9  48549.1 -97498  48375.7 -97590.7  48223.6 -97715.5
             48098.8 -97867.6  48006.1 -98041  47949 -98229.2  47929.7 -98425
@@ -74,6 +78,17 @@
     )
   )
   (placement
+    (component Infinity:InfinityText
+      (place G3 231318 -113741 back 0 (PN LOGO))
+      (place G1 269050 -107798 back 180 (PN LOGO))
+      (place G2 269088 -107798 front 0 (PN LOGO))
+    )
+    (component nrfmicro:connector_swd
+      (place J2 42583.1 -115481 front 0 (PN Conn_01x04))
+    )
+    (component nrfmicro:connectro_bat
+      (place J3 34886.9 -55930.8 back 90 (PN Conn_01x02))
+    )
     (component "Used_Footprints:Diode_SMD_SOD-123"
       (place D48 256337 -104521 front 90 (PN 1n4148))
       (place D47 234899 -104521 front 90 (PN 1n4148))
@@ -196,7 +211,7 @@
       (place U2 27317.7 -106934 front 270 (PN MCP73831))
     )
     (component "nrfmicro:switch_MSK-12C02_smd"
-      (place SW51 16700.5 -86969.6 back 180 (PN "MSK-12C02"))
+      (place SW51 16090.9 -57848.5 back 180 (PN "MSK-12C02"))
     )
     (component "Keebio-Parts:SW_SPST_TL3342"
       (place SW50 43027.6 -93230.7 back 90 (PN SW_Push))
@@ -219,10 +234,6 @@
       (place Q2 35953.7 -97269.3 back 0 (PN AO3406))
       (place Q1 31229.3 -106934 front 90 (PN AO3407))
     )
-    (component nrfmicro:connector_swd
-      (place J3 49376.6 -95157.8 front 0 (PN Conn_01x02))
-      (place J2 49314.1 -91541.6 front 0 (PN Conn_01x04))
-    )
     (component "Diode_SMD:D_SOD-123"
       (place D51 18503.9 -97269.3 back 270 (PN 1N5819))
     )
@@ -232,6 +243,18 @@
     )
   )
   (library
+    (image Infinity:InfinityText
+    )
+    (image nrfmicro:connector_swd
+      (pin Round[A]Pad_1270_um 4 3810 0)
+      (pin Round[A]Pad_1270_um 3 1270 0)
+      (pin Round[A]Pad_1270_um (rotate 90) 1 -3810 0)
+      (pin Round[A]Pad_1270_um 2 -1270 0)
+    )
+    (image nrfmicro:connectro_bat
+      (pin Round[A]Pad_1270_um 2 1270 0)
+      (pin Round[A]Pad_1270_um 1 -1270 0)
+    )
     (image "Used_Footprints:Diode_SMD_SOD-123"
       (outline (path signal 150  -2500 -900  -2500 900))
       (outline (path signal 150  -1090 -900  -2500 -900))
@@ -635,10 +658,6 @@
       (pin Rect[T]Pad_900x800_um 2 -1000 -950)
       (pin Rect[T]Pad_900x800_um 1 -1000 950)
     )
-    (image nrfmicro:connector_swd
-      (pin Round[A]Pad_1270_um (rotate 90) 1 -1270 0)
-      (pin Round[A]Pad_1270_um 2 1270 0)
-    )
     (image "Diode_SMD:D_SOD-123"
       (outline (path signal 120  -2250 1000  1650 1000))
       (outline (path signal 120  -2250 -1000  1650 -1000))
@@ -777,18 +796,22 @@
     )
   )
   (network
+    (net @:no_net_0
+    )
+    (net @:no_net_1
+    )
     (net GND
-      (pins U1-5 U1-21 U1-24 J1-12 J1-1 U3-2 U2-2 SW50-2 SW50-2@1 R9-2 R5-2 R4-2 R3-2
-        R1-2 Q2-2 J3-2 C3-2 C2-2 C1-2)
+      (pins J2-4 J3-2 U1-5 U1-21 U1-24 J1-12 J1-1 U3-2 U2-2 SW50-2 SW50-2@1 R9-2 R5-2
+        R4-2 R3-2 R1-2 Q2-2 C3-2 C2-2 C1-2)
     )
     (net VBAT
-      (pins U2-3 SW51-2 J3-1 C1-1)
+      (pins J3-1 U2-3 SW51-2 C1-1)
     )
     (net "Net-(C2-Pad1)"
       (pins U3-1 R8-1 Q1-2 D51-1 C2-1)
     )
     (net VCC
-      (pins U1-19 U3-5 R7-1 C3-1)
+      (pins J2-3 U1-19 U3-5 R7-1 C3-1)
     )
     (net /P1.04
       (pins D14-1 D14-1@1 D13-1 D13-1@1 D12-1 D12-1@1 D11-1 D11-1@1 D10-1 D10-1@1
@@ -987,10 +1010,10 @@
       (pins J1-13 J1-13@1 J1-13@2 J1-13@3)
     )
     (net SWC
-      (pins U1-39 J2-1)
+      (pins J2-1 U1-39)
     )
     (net SWD
-      (pins U1-37 J2-2)
+      (pins J2-2 U1-37)
     )
     (net "Net-(Q1-Pad3)"
       (pins SW51-3 R6-1 Q1-3)
