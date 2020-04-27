@@ -75,10 +75,10 @@
       (place G2 269088 -107798 front 0 (PN LOGO))
     )
     (component nrfmicro:connector_swd
-      (place J2 42583.1 -115481 front 0 (PN Conn_01x04))
+      (place J2 38023.7 -109639 front 90 (PN Conn_01x04))
     )
     (component nrfmicro:connectro_bat
-      (place J3 40855.9 -75577.7 back 90 (PN Conn_01x02))
+      (place J3 23876 -57848.5 back 270 (PN Conn_01x02))
     )
     (component "Used_Footprints:Diode_SMD_SOD-123"
       (place D48 256337 -104521 front 90 (PN 1n4148))
@@ -205,32 +205,32 @@
       (place SW51 16090.9 -57848.5 back 180 (PN "MSK-12C02"))
     )
     (component "Keebio-Parts:SW_SPST_TL3342"
-      (place SW50 43027.6 -93230.7 back 90 (PN SW_Push))
+      (place SW50 44564.3 -92202 back 90 (PN SW_Push))
     )
     (component Resistor_SMD:R_0603_1608Metric
       (place R9 31229.3 -111912 front 180 (PN 100K))
       (place R8 23495 -111912 front 180 (PN 100K))
-      (place R7 32105.6 -95681.8 back 180 (PN 10K))
-      (place R6 21539.2 -98844.1 back 0 (PN 10K))
-      (place R5 28587.7 -95681.8 back 180 (PN 5.1K))
-      (place R4 32105.6 -98844.1 back 0 (PN 5.1K))
+      (place R7 32956.5 -93713.3 back 180 (PN 10K))
+      (place R6 21590 -97612.2 back 0 (PN 10K))
+      (place R5 29159.2 -93700.6 back 180 (PN 5.1K))
+      (place R4 32981.9 -97663 back 0 (PN 5.1K))
       (place R3 27317.7 -111912 front 180 (PN 4.7K))
-      (place R2 28587.7 -98844.1 back 180 (PN 1K))
-      (place R1 21539.2 -95681.8 back 180 (PN 1K))
+      (place R2 29184.6 -97650.3 back 180 (PN 1K))
+      (place R1 21564.6 -93662.5 back 180 (PN 1K))
       (place C3 23495 -110109 front 180 (PN 10uF))
       (place C2 31229.3 -110109 front 180 (PN 10uF))
       (place C1 27317.7 -110109 front 180 (PN 10uF))
     )
     (component "Package_TO_SOT_SMD:SOT-23"
-      (place Q2 35953.7 -97269.3 back 0 (PN AO3406))
+      (place Q2 36804.6 -95681.8 back 0 (PN AO3406))
       (place Q1 31229.3 -106934 front 90 (PN AO3407))
     )
     (component "Diode_SMD:D_SOD-123"
-      (place D51 18503.9 -97269.3 back 270 (PN 1N5819))
+      (place D51 18529.3 -95631 back 270 (PN 1N5819))
     )
     (component LED_SMD:LED_0603_1608Metric
-      (place D50 25031.7 -98844.1 back 180 (PN CHG))
-      (place D49 25031.7 -95681.8 back 180 (PN BT))
+      (place D50 25387.3 -97624.9 back 180 (PN CHG))
+      (place D49 25361.9 -93675.2 back 180 (PN BT))
     )
   )
   (library
