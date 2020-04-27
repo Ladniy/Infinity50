@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 34)
+    (drawings 38)
     (tracks 0)
     (zones 0)
     (modules 122)
@@ -309,13 +309,65 @@
     (add_net VCC)
   )
 
-  (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E94F)
-    (at 256.3368 104.521 90)
-    (path /5EB13DF5)
-    (fp_text reference D48 (at 0 1.81 90) (layer F.SilkS)
+  (module nrfmicro:connector_swd (layer F.Cu) (tedit 5EA651A2) (tstamp 5EA8DBA6)
+    (at 42.5831 115.4811)
+    (path /5ED6D234)
+    (fp_text reference J2 (at 0 -3.175) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value Conn_01x04 (at 0 -5.08) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text user SWD (at -1.27 -1.27) (layer F.SilkS) hide
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
+    )
+    (fp_text user SWC (at 1.27 -1.27 180) (layer F.SilkS) hide
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
+    )
+    (fp_text user GND (at 3.81 -1.27) (layer F.SilkS) hide
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
+    )
+    (fp_text user VCC (at 1.27 -1.27) (layer F.SilkS) hide
+      (effects (font (size 0.7 0.7) (thickness 0.15)))
+    )
+    (pad 4 thru_hole circle (at 3.81 0) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 1 GND))
+    (pad 3 thru_hole circle (at 1.27 0) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 4 VCC))
+    (pad 1 thru_hole circle (at -3.81 0 90) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 68 SWC))
+    (pad 2 thru_hole circle (at -1.27 0) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 69 SWD))
+  )
+
+  (module nrfmicro:connectro_bat (layer B.Cu) (tedit 5EA65109) (tstamp 5EA6E9BC)
+    (at 34.8869 55.9308 270)
+    (path /5DA92B59)
+    (fp_text reference J3 (at 0 -1.7145 270) (layer Dwgs.User) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text value Conn_01x02 (at 0 2.4765 270) (layer B.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user - (at 1.27 1.27 270) (layer B.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
+    )
+    (fp_text user + (at -1.27 1.27 270) (layer B.SilkS)
+      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
+    )
+    (pad 2 thru_hole circle (at 1.27 0 270) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 1 GND))
+    (pad 1 thru_hole circle (at -1.27 0 270) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
+      (net 2 VBAT))
+  )
+
+  (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E94F)
+    (at 256.337 104.521 90)
+    (path /5EB13DF5)
+    (fp_text reference D48 (at 0 1.81 90) (layer Dwgs.User) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -337,12 +389,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E93F)
-    (at 234.8992 104.521 90)
+    (at 234.899 104.521 90)
     (path /5EB13DE9)
-    (fp_text reference D47 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D47 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -364,12 +416,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E92F)
-    (at 213.4743 104.521 90)
+    (at 213.474 104.521 90)
     (path /5EB13DDD)
-    (fp_text reference D46 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D46 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -391,12 +443,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E91F)
-    (at 177.7619 104.521 90)
+    (at 177.762 104.521 90)
     (path /5EB13DD1)
-    (fp_text reference D45 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D45 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -418,12 +470,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E90F)
-    (at 130.1369 104.521 90)
+    (at 130.137 104.521 90)
     (path /5EB13DC5)
-    (fp_text reference D44 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D44 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -447,10 +499,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8FF)
     (at 99.1743 104.521 90)
     (path /5EB13DB9)
-    (fp_text reference D43 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D43 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -474,10 +526,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8EF)
     (at 77.7494 104.521 90)
     (path /5EB13DAD)
-    (fp_text reference D42 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D42 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -501,10 +553,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8DF)
     (at 56.3118 104.521 90)
     (path /5EB13DA1)
-    (fp_text reference D41 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D41 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -526,12 +578,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8CF)
-    (at 280.1493 85.471 90)
+    (at 280.149 85.471 90)
     (path /5EB04BE3)
-    (fp_text reference D40 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D40 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -553,12 +605,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8BF)
-    (at 258.7244 85.471 90)
+    (at 258.724 85.471 90)
     (path /5EB04BD7)
-    (fp_text reference D39 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D39 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -580,12 +632,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E8AF)
-    (at 237.2868 85.471 90)
+    (at 237.287 85.471 90)
     (path /5EB04BCB)
-    (fp_text reference D38 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D38 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -607,12 +659,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E89F)
-    (at 218.2368 85.471 90)
+    (at 218.237 85.471 90)
     (path /5EB04BBF)
-    (fp_text reference D37 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D37 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -634,12 +686,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E88F)
-    (at 199.1868 85.471 90)
+    (at 199.187 85.471 90)
     (path /5EB04BB3)
-    (fp_text reference D36 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D36 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -661,12 +713,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E87F)
-    (at 180.1368 85.471 90)
+    (at 180.137 85.471 90)
     (path /5EB04BA7)
-    (fp_text reference D35 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D35 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -688,12 +740,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E86F)
-    (at 161.0868 85.471 90)
+    (at 161.087 85.471 90)
     (path /5EB04B9B)
-    (fp_text reference D34 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D34 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -715,12 +767,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E85F)
-    (at 142.0368 85.471 90)
+    (at 142.037 85.471 90)
     (path /5EB04B8F)
-    (fp_text reference D33 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D33 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -742,12 +794,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E84F)
-    (at 122.9868 85.471 90)
+    (at 122.987 85.471 90)
     (path /5EB04B83)
-    (fp_text reference D32 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D32 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -769,12 +821,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E83F)
-    (at 103.9368 85.471 90)
+    (at 103.937 85.471 90)
     (path /5EB04B77)
-    (fp_text reference D31 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D31 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -798,10 +850,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E82F)
     (at 84.8868 85.471 90)
     (path /5EB04B6B)
-    (fp_text reference D30 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D30 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -825,10 +877,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E81F)
     (at 65.8368 85.471 90)
     (path /5EB04B5F)
-    (fp_text reference D29 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D29 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -852,10 +904,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E80F)
     (at 39.6494 85.471 90)
     (path /5EB04B53)
-    (fp_text reference D28 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D28 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -877,12 +929,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7FF)
-    (at 273.0119 66.421 90)
+    (at 273.012 66.421 90)
     (path /5EAD611F)
-    (fp_text reference D27 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D27 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -904,12 +956,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7EF)
-    (at 246.8118 66.421 90)
+    (at 246.812 66.421 90)
     (path /5EAD6113)
-    (fp_text reference D26 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D26 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -931,12 +983,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7DF)
-    (at 227.7618 66.421 90)
+    (at 227.762 66.421 90)
     (path /5EAD6107)
-    (fp_text reference D25 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D25 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -958,12 +1010,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7CF)
-    (at 208.7118 66.421 90)
+    (at 208.712 66.421 90)
     (path /5EAD60FB)
-    (fp_text reference D24 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D24 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -985,12 +1037,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7BF)
-    (at 189.6618 66.421 90)
+    (at 189.662 66.421 90)
     (path /5EAD60EF)
-    (fp_text reference D23 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D23 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1012,12 +1064,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E7AF)
-    (at 170.6118 66.421 90)
+    (at 170.612 66.421 90)
     (path /5EAD60E3)
-    (fp_text reference D22 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D22 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1039,12 +1091,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E79F)
-    (at 151.5618 66.421 90)
+    (at 151.562 66.421 90)
     (path /5EAD60D7)
-    (fp_text reference D21 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D21 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1066,12 +1118,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E78F)
-    (at 132.5118 66.421 90)
+    (at 132.512 66.421 90)
     (path /5EAD60CB)
-    (fp_text reference D20 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D20 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1093,12 +1145,12 @@
   )
 
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E77F)
-    (at 113.4618 66.421 90)
+    (at 113.462 66.421 90)
     (path /5EAD60BF)
-    (fp_text reference D19 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D19 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1122,10 +1174,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E76F)
     (at 94.4118 66.421 90)
     (path /5EAD60B3)
-    (fp_text reference D18 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D18 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1149,10 +1201,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E75F)
     (at 75.3618 66.421 90)
     (path /5EAD60A7)
-    (fp_text reference D17 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D17 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1176,10 +1228,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E74F)
     (at 56.3118 66.421 90)
     (path /5EAD609B)
-    (fp_text reference D16 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D16 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1203,10 +1255,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E73F)
     (at 34.8869 66.421 90)
     (path /5EAD608F)
-    (fp_text reference D15 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D15 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1230,10 +1282,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E72F)
     (at 280.162 47.371 90)
     (path /5EABC53D)
-    (fp_text reference D14 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D14 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1257,10 +1309,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E71F)
     (at 261.112 47.371 90)
     (path /5EABA09D)
-    (fp_text reference D13 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D13 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1284,10 +1336,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E70F)
     (at 242.062 47.371 90)
     (path /5EAB722F)
-    (fp_text reference D12 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D12 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1311,10 +1363,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6FF)
     (at 223.012 47.371 90)
     (path /5EAB483F)
-    (fp_text reference D11 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D11 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1338,10 +1390,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6EF)
     (at 203.962 47.371 90)
     (path /5EAB1C15)
-    (fp_text reference D10 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D10 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1365,10 +1417,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6DF)
     (at 184.912 47.371 90)
     (path /5EAAF405)
-    (fp_text reference D9 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D9 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1392,10 +1444,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6CF)
     (at 165.862 47.371 90)
     (path /5EAAC817)
-    (fp_text reference D8 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D8 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1419,10 +1471,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6BF)
     (at 146.812 47.371 90)
     (path /5EAA9E77)
-    (fp_text reference D7 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D7 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1446,10 +1498,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E6AF)
     (at 127.762 47.371 90)
     (path /5EAA71FD)
-    (fp_text reference D6 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D6 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1473,10 +1525,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E69F)
     (at 108.712 47.371 90)
     (path /5EAA47EF)
-    (fp_text reference D5 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D5 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1500,10 +1552,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E68F)
     (at 89.662 47.371 90)
     (path /5EAA1B11)
-    (fp_text reference D4 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D4 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1527,10 +1579,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E67F)
     (at 70.612 47.371 90)
     (path /5EA9ED93)
-    (fp_text reference D3 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D3 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1554,10 +1606,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E66F)
     (at 51.562 47.371 90)
     (path /5EA9C943)
-    (fp_text reference D2 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D2 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1581,10 +1633,10 @@
   (module Used_Footprints:Diode_SMD_SOD-123 (layer F.Cu) (tedit 5EA639D6) (tstamp 5EA6E65F)
     (at 32.512 47.371 90)
     (path /5EA748FE)
-    (fp_text reference D1 (at 0 1.81 90) (layer F.SilkS)
+    (fp_text reference D1 (at 0 1.81 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab)
+    (fp_text value 1n4148 (at 0 -1.95 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2.5 0.9) (end -2.5 -0.9) (layer B.SilkS) (width 0.15))
@@ -1606,12 +1658,12 @@
   )
 
   (module Infinity:SW_MxHotswap_2.75u (layer F.Cu) (tedit 5EA636D1) (tstamp 5EA6EEAD)
-    (at 169.3799 107.95)
+    (at 169.38 107.95)
     (path /5EB13DCB)
-    (fp_text reference SW46 (at 0 3.41) (layer F.SilkS)
+    (fp_text reference SW46 (at 0 3.41) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.16) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.16) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1648,12 +1700,12 @@
   )
 
   (module Infinity:SW_MxHotswap_2.25u (layer F.Cu) (tedit 5EA636C5) (tstamp 5EA6EE92)
-    (at 121.7549 107.95)
+    (at 121.755 107.95)
     (path /5EB13DBF)
-    (fp_text reference SW45 (at 0 3.21) (layer F.SilkS)
+    (fp_text reference SW45 (at 0 3.21) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.36) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.36) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1690,12 +1742,12 @@
   )
 
   (module Infinity:SW_MxHotswap_7u (layer F.Cu) (tedit 5EA636B8) (tstamp 5EA6EE32)
-    (at 147.9423 107.95)
+    (at 147.942 107.95)
     (path /5EC49318)
-    (fp_text reference SW41 (at 0 3.41) (layer F.SilkS)
+    (fp_text reference SW41 (at 0 3.41) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.27) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.27) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1734,10 +1786,10 @@
   (module Infinity:SW_MxHotswap_1.75u (layer F.Cu) (tedit 5EA636A3) (tstamp 5EA6ED03)
     (at 31.2658 88.9)
     (path /5EB04B4D)
-    (fp_text reference SW28 (at 0 3.21) (layer F.SilkS)
+    (fp_text reference SW28 (at 0 3.21) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.08) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.08) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1770,12 +1822,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1.75u (layer F.Cu) (tedit 5EA636A3) (tstamp 5EA6ECEC)
-    (at 264.6283 69.85)
+    (at 264.628 69.85)
     (path /5EAD6119)
-    (fp_text reference SW27 (at 0 3.21) (layer F.SilkS)
+    (fp_text reference SW27 (at 0 3.21) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.08) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.08) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1808,12 +1860,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1.25u (layer F.Cu) (tedit 5EA63697) (tstamp 5EA6EEDB)
-    (at 226.5172 107.95)
+    (at 226.517 107.95)
     (path /5EB13DE3)
-    (fp_text reference SW48 (at 0 3.04) (layer F.SilkS)
+    (fp_text reference SW48 (at 0 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1848,10 +1900,10 @@
   (module Infinity:SW_MxHotswap_1.25u (layer F.Cu) (tedit 5EA63697) (tstamp 5EA6EE60)
     (at 69.3674 107.95)
     (path /5EB13DA7)
-    (fp_text reference SW43 (at 0 3.04) (layer F.SilkS)
+    (fp_text reference SW43 (at 0 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1884,12 +1936,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1.25u (layer F.Cu) (tedit 5EA63697) (tstamp 5EA6EE00)
-    (at 250.3408 88.9)
+    (at 250.341 88.9)
     (path /5EB04BD1)
-    (fp_text reference SW39 (at 0 3.04) (layer F.SilkS)
+    (fp_text reference SW39 (at 0 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1924,10 +1976,10 @@
   (module Infinity:SW_MxHotswap_1.25u (layer F.Cu) (tedit 5EA63697) (tstamp 5EA6EBD8)
     (at 26.5033 69.85)
     (path /5EAD6089)
-    (fp_text reference SW15 (at 0 3.04) (layer F.SilkS)
+    (fp_text reference SW15 (at 0 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.15) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1960,12 +2012,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EEF2)
-    (at 247.9532 107.95)
+    (at 247.953 107.95)
     (path /5EB13DEF)
-    (fp_text reference SW49 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW49 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -1998,12 +2050,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EEC4)
-    (at 205.0923 107.95)
+    (at 205.092 107.95)
     (path /5EB13DD7)
-    (fp_text reference SW47 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW47 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2038,10 +2090,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EE77)
     (at 90.7923 107.95)
     (path /5EB13DB3)
-    (fp_text reference SW44 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW44 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2076,10 +2128,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EE49)
     (at 47.9298 107.95)
     (path /5EB13D9B)
-    (fp_text reference SW42 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW42 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2112,12 +2164,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EE17)
-    (at 271.7657 88.9)
+    (at 271.766 88.9)
     (path /5EB04BDD)
-    (fp_text reference SW40 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW40 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2150,12 +2202,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EDE9)
-    (at 228.9048 88.9)
+    (at 228.905 88.9)
     (path /5EB04BC5)
-    (fp_text reference SW38 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW38 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2188,12 +2240,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EDD2)
-    (at 209.8548 88.9)
+    (at 209.855 88.9)
     (path /5EB04BB9)
-    (fp_text reference SW37 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW37 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2226,12 +2278,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EDBB)
-    (at 190.8032 88.9)
+    (at 190.803 88.9)
     (path /5EB04BAD)
-    (fp_text reference SW36 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW36 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2264,12 +2316,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EDA4)
-    (at 171.7548 88.9)
+    (at 171.755 88.9)
     (path /5EB04BA1)
-    (fp_text reference SW35 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW35 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2302,12 +2354,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ED8D)
-    (at 152.7048 88.9)
+    (at 152.705 88.9)
     (path /5EB04B95)
-    (fp_text reference SW34 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW34 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2340,12 +2392,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ED76)
-    (at 133.6532 88.9)
+    (at 133.653 88.9)
     (path /5EB04B89)
-    (fp_text reference SW33 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW33 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2378,12 +2430,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ED5F)
-    (at 114.6048 88.9)
+    (at 114.605 88.9)
     (path /5EB04B7D)
-    (fp_text reference SW32 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW32 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2418,10 +2470,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA71F6D)
     (at 95.5548 88.9)
     (path /5EB04B71)
-    (fp_text reference SW31 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW31 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2456,10 +2508,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ED31)
     (at 76.5032 88.9)
     (path /5EB04B65)
-    (fp_text reference SW30 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW30 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2494,10 +2546,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ED1A)
     (at 57.4532 88.9)
     (path /5EB04B59)
-    (fp_text reference SW29 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW29 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2530,12 +2582,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ECD5)
-    (at 238.4298 69.85)
+    (at 238.43 69.85)
     (path /5EAD610D)
-    (fp_text reference SW26 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW26 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2568,12 +2620,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ECBE)
-    (at 219.3798 69.85)
+    (at 219.38 69.85)
     (path /5EAD6101)
-    (fp_text reference SW25 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW25 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2606,12 +2658,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6ECA7)
-    (at 200.3298 69.85)
+    (at 200.33 69.85)
     (path /5EAD60F5)
-    (fp_text reference SW24 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW24 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2644,12 +2696,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC90)
-    (at 181.2782 69.85)
+    (at 181.278 69.85)
     (path /5EAD60E9)
-    (fp_text reference SW23 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW23 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2682,12 +2734,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC79)
-    (at 162.2298 69.85)
+    (at 162.23 69.85)
     (path /5EAD60DD)
-    (fp_text reference SW22 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW22 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2720,12 +2772,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC62)
-    (at 143.1782 69.85)
+    (at 143.178 69.85)
     (path /5EAD60D1)
-    (fp_text reference SW21 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW21 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2758,12 +2810,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC4B)
-    (at 124.1282 69.85)
+    (at 124.128 69.85)
     (path /5EAD60C5)
-    (fp_text reference SW20 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW20 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2796,12 +2848,12 @@
   )
 
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC34)
-    (at 105.0782 69.85)
+    (at 105.078 69.85)
     (path /5EAD60B9)
-    (fp_text reference SW19 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW19 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2836,10 +2888,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC1D)
     (at 86.0282 69.85)
     (path /5EAD60AD)
-    (fp_text reference SW18 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW18 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2874,10 +2926,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EC06)
     (at 66.9798 69.85)
     (path /5EAD60A1)
-    (fp_text reference SW17 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW17 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2912,10 +2964,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EBEF)
     (at 47.9298 69.85)
     (path /5EAD6095)
-    (fp_text reference SW16 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW16 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2950,10 +3002,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EBC1)
     (at 271.78 50.8)
     (path /5EABC537)
-    (fp_text reference SW14 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW14 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -2988,10 +3040,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EBAA)
     (at 252.73 50.8)
     (path /5EABA097)
-    (fp_text reference SW13 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW13 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3026,10 +3078,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB93)
     (at 233.68 50.8)
     (path /5EAB7229)
-    (fp_text reference SW12 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW12 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3064,10 +3116,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB7C)
     (at 214.63 50.8)
     (path /5EAB4839)
-    (fp_text reference SW11 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW11 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3102,10 +3154,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB65)
     (at 195.58 50.8)
     (path /5EAB1C0F)
-    (fp_text reference SW10 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW10 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3140,10 +3192,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB4E)
     (at 176.53 50.8)
     (path /5EAAF3FF)
-    (fp_text reference SW9 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW9 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3178,10 +3230,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB37)
     (at 157.48 50.8)
     (path /5EAAC811)
-    (fp_text reference SW8 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW8 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3216,10 +3268,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB20)
     (at 138.43 50.8)
     (path /5EAA9E71)
-    (fp_text reference SW7 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW7 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3254,10 +3306,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EB09)
     (at 119.38 50.8)
     (path /5EAA71F7)
-    (fp_text reference SW6 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW6 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3292,10 +3344,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EAF2)
     (at 100.33 50.8)
     (path /5EAA47E9)
-    (fp_text reference SW5 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW5 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3330,10 +3382,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EADB)
     (at 81.28 50.8)
     (path /5EAA1B0B)
-    (fp_text reference SW4 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW4 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3368,10 +3420,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EAC4)
     (at 62.23 50.8)
     (path /5EA9ED8D)
-    (fp_text reference SW3 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW3 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3406,10 +3458,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EAAD)
     (at 43.18 50.8)
     (path /5EA9C93D)
-    (fp_text reference SW2 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW2 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3444,10 +3496,10 @@
   (module Infinity:SW_MxHotswap_1u (layer F.Cu) (tedit 5EA63635) (tstamp 5EA6EA96)
     (at 24.13 50.8)
     (path /5EA7314F)
-    (fp_text reference SW1 (at -0.04 3.04) (layer F.SilkS)
+    (fp_text reference SW1 (at -0.04 3.04) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab)
+    (fp_text value SW_Push (at 0 -8.14) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_circle (center 8.382 -3.429) (end 8.4455 -3.429) (layer Dwgs.User) (width 0.12))
@@ -3480,10 +3532,10 @@
   )
 
   (module nrfmicro:E73-2G4M08S1C-52840 (layer B.Cu) (tedit 5EA6268A) (tstamp 5EA74D0F)
-    (at 17.5514 107.8484)
+    (at 17.5514 107.848)
     (path /5C7001D3)
     (fp_text reference U1 (at 7.746775 0.000467 -270) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value E73-2G4M08S1C (at 9.778775 0.635467 -270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -3493,7 +3545,7 @@
     (fp_line (start 18.034 -6.604) (end 18.034 6.604) (layer B.Fab) (width 0.15))
     (fp_line (start 18.034 6.604) (end -0.127 6.604) (layer B.Fab) (width 0.15))
     (fp_text user E73-2G4M08S1C (at 15.875 0 -90) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad 28 thru_hole rect (at 4.632 -4.041) (size 0.65 1) (drill 0.45) (layers *.Cu *.Mask)
       (net 93 /P0.15))
@@ -3593,7 +3645,7 @@
     (path /5C743564)
     (attr smd)
     (fp_text reference J1 (at 0 9.25) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value "USB-C USB 2.0 MC-372" (at 0 -1.15) (layer Dwgs.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3730,13 +3782,13 @@
   )
 
   (module nrfmicro:switch_MSK-12C02_smd (layer B.Cu) (tedit 5C7B2303) (tstamp 5EA6EF3F)
-    (at 16.7005 86.9696)
+    (at 16.0909 57.8485)
     (path /5C7B2101)
     (attr smd)
-    (fp_text reference SW51 (at 1.35 0 -90) (layer B.Fab)
+    (fp_text reference SW51 (at 1.35 0 -90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value MSK-12C02 (at 5.35 0 -90) (layer B.Fab)
+    (fp_text value MSK-12C02 (at 5.35 0 -90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 0.3 1.5) (end 0 1.5) (layer Dwgs.User) (width 0.15))
@@ -3774,13 +3826,13 @@
     (tags "SPST Tactile Switch")
     (path /5EC53F12)
     (attr smd)
-    (fp_text reference SW50 (at 0 3.75 90) (layer B.SilkS)
+    (fp_text reference SW50 (at 0 3.75 90) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text value SW_Push (at 0 -3.75 90) (layer B.Fab)
+    (fp_text value SW_Push (at 0 -3.75 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
-    (fp_text user %R (at 0 3.75 90) (layer B.Fab)
+    (fp_text user %R (at 0 3.75 90) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
     )
     (fp_line (start 3.2 -2.1) (end 3.2 -1.6) (layer B.Fab) (width 0.1))
@@ -3844,7 +3896,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5EA81E73)
-    (at 31.2293 111.9124 180)
+    (at 31.2293 111.912 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5B159927)
@@ -3880,7 +3932,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5EA6EA6E)
-    (at 23.495 111.9124 180)
+    (at 23.495 111.912 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5CC730D9)
@@ -4060,7 +4112,7 @@
   )
 
   (module Resistor_SMD:R_0603_1608Metric (layer F.Cu) (tedit 5B301BBD) (tstamp 5EA6EA19)
-    (at 27.3177 111.9124 180)
+    (at 27.3177 111.912 180)
     (descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
     (tags resistor)
     (path /5C701629)
@@ -4249,60 +4301,6 @@
     )
   )
 
-  (module nrfmicro:connector_swd (layer F.Cu) (tedit 5CB9AD9D) (tstamp 5EA6E9BC)
-    (at 49.376599 95.157799)
-    (path /5DA92B59)
-    (fp_text reference J3 (at 0 -3.175) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_01x02 (at 0 -5.08) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user SWD (at -1.27 -1.27 unlocked) (layer B.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user SWC (at 1.27 -1.27 -180) (layer B.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user SWC (at 1.27 -1.27 180) (layer F.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)))
-    )
-    (fp_text user SWD (at -1.27 -1.27 unlocked) (layer F.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at -1.27 0 90) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
-      (net 2 VBAT))
-    (pad 2 thru_hole circle (at 1.27 0) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
-      (net 1 GND))
-  )
-
-  (module nrfmicro:connector_swd (layer F.Cu) (tedit 5CB9AD9D) (tstamp 5EA6E9B2)
-    (at 49.3141 91.5416)
-    (path /5CDF605B)
-    (fp_text reference J2 (at 0 -3.175) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value Conn_01x04 (at 0 -5.08) (layer F.Fab)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text user SWD (at -1.27 -1.27 unlocked) (layer B.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user SWC (at 1.27 -1.27 -180) (layer B.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)) (justify mirror))
-    )
-    (fp_text user SWC (at 1.27 -1.27 180) (layer F.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)))
-    )
-    (fp_text user SWD (at -1.27 -1.27 unlocked) (layer F.SilkS)
-      (effects (font (size 0.7 0.7) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at -1.27 0 90) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
-      (net 68 SWC))
-    (pad 2 thru_hole circle (at 1.27 0) (size 1.27 1.27) (drill 0.85) (layers *.Cu *.Mask)
-      (net 69 SWD))
-  )
-
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5EA6E98E)
     (at 18.5039 97.2693 90)
     (descr SOD-123)
@@ -4310,7 +4308,7 @@
     (path /5B158495)
     (attr smd)
     (fp_text reference D51 (at 0 2 270) (layer Dwgs.User) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 1N5819 (at 0 -2.1 270) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -4531,6 +4529,18 @@
     )
   )
 
+  (gr_text SWD (at 41.3004 113.9444) (layer B.SilkS) (tstamp 5EA8DEFF)
+    (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
+  )
+  (gr_text SWC (at 38.7731 113.9571) (layer B.SilkS) (tstamp 5EA8DEFF)
+    (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
+  )
+  (gr_text "-\n" (at 46.3931 113.9444) (layer B.SilkS) (tstamp 5EA8DEFF)
+    (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
+  )
+  (gr_text + (at 43.8531 113.9444) (layer B.SilkS)
+    (effects (font (size 0.7 0.7) (thickness 0.175)) (justify mirror))
+  )
   (gr_line (start 261.2517 97.42154) (end 211.201 97.42154) (layer Edge.Cuts) (width 0.05) (tstamp 5EA7DDC6))
   (gr_line (start 206.8449 96.266) (end 210.0072 99.4283) (layer Edge.Cuts) (width 0.05) (tstamp 5EA7DDBC))
   (gr_line (start 208.0387 94.2594) (end 211.201 97.42154) (layer Edge.Cuts) (width 0.05) (tstamp 5EA7DDBB))
@@ -4566,4 +4576,24 @@
   (gr_line (start 280.30162 117.47508) (end 15.6083 117.475) (layer Edge.Cuts) (width 0.05))
   (gr_line (start 14.60492 42.27838) (end 14.60492 116.47162) (layer Edge.Cuts) (width 0.05))
 
+  (zone (net 0) (net_name "") (layer F.Cu) (tstamp 0) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 281.9273 118.1227) (xy 13.9319 118.1227) (xy 13.9319 35.5727) (xy 281.9273 35.5727)
+      )
+    )
+  )
+  (zone (net 0) (net_name "") (layer B.Cu) (tstamp 5EA89ECF) (hatch edge 0.508)
+    (connect_pads (clearance 0.508))
+    (min_thickness 0.254)
+    (fill (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
+    (polygon
+      (pts
+        (xy 281.9273 118.1227) (xy 13.9319 118.1227) (xy 13.9319 35.5727) (xy 281.9273 35.5727)
+      )
+    )
+  )
 )

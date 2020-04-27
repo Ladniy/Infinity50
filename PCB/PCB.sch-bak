@@ -705,9 +705,9 @@ Text GLabel 3300 1650 2    60   Input ~ 0
 DFU
 Text GLabel 3300 1550 2    60   Input ~ 0
 SWC
-Text GLabel 8730 5795 0    60   Input ~ 0
+Text GLabel 8725 5650 0    60   Input ~ 0
 SWC
-Text GLabel 8730 5895 0    60   Input ~ 0
+Text GLabel 8725 5750 0    60   Input ~ 0
 SWD
 $Comp
 L PCB-rescue:GND-nrfmicro-rescue #PWR012
@@ -718,17 +718,6 @@ F 1 "GND" H 8730 6095 50  0000 C CNN
 F 2 "" H 8730 6245 50  0001 C CNN
 F 3 "" H 8730 6245 50  0001 C CNN
 	1    8730 6245
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5CDF605B
-P 8930 5795
-F 0 "J2" H 9010 5787 50  0000 L CNN
-F 1 "Conn_01x04" H 9010 5696 50  0000 L CNN
-F 2 "nrfmicro:connector_swd" H 8930 5795 50  0001 C CNN
-F 3 "~" H 8930 5795 50  0001 C CNN
-	1    8930 5795
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2214,4 +2203,37 @@ Wire Notes Line
 	6970 6535 4475 6535
 Text Notes 8390 4745 0    59   ~ 0
 USB Scheme\n
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5ED6D234
+P 8925 5750
+F 0 "J2" H 9005 5742 50  0000 L CNN
+F 1 "Conn_01x04" H 9005 5651 50  0000 L CNN
+F 2 "" H 8925 5750 50  0001 C CNN
+F 3 "~" H 8925 5750 50  0001 C CNN
+	1    8925 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5ED75EB4
+P 8725 5850
+F 0 "#PWR?" H 8725 5700 50  0001 C CNN
+F 1 "VCC" V 8725 5975 50  0000 L CNN
+F 2 "" H 8725 5850 50  0001 C CNN
+F 3 "" H 8725 5850 50  0001 C CNN
+	1    8725 5850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5ED79AA3
+P 8725 5950
+F 0 "#PWR?" H 8725 5700 50  0001 C CNN
+F 1 "GND" V 8725 5825 50  0000 R CNN
+F 2 "" H 8725 5950 50  0001 C CNN
+F 3 "" H 8725 5950 50  0001 C CNN
+	1    8725 5950
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

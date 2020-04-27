@@ -1,4 +1,4 @@
-17524380998031967
+17526015641302544
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -75828,7 +75828,7 @@ Diode_SMD_SOD-123
 
 
 0
-6
+4
 2
 Used_Footprints
 Hole_Cover_M2
@@ -77680,6 +77680,13 @@ http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf
 2
 nrfmicro
 connector_swd
+
+
+0
+4
+4
+nrfmicro
+connectro_bat
 
 
 0
