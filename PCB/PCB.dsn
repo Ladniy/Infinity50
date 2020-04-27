@@ -40,26 +40,10 @@
             281927 -118123))
     (plane @:no_net_1 (polygon B.Cu 0  281927 -118123  13931.9 -118123  13931.9 -35572.7  281927 -35572.7
             281927 -118123))
-    (keepout "" (polygon signal 0  87845.9 -94259.4  84683.6 -97421.7  48933.1 -97421.6
-            48737.3 -97440.9  48549.1 -97498  48375.7 -97590.7  48223.6 -97715.5
-            48098.8 -97867.6  48006.1 -98041  47949 -98229.2  47929.7 -98425
-            47949 -98620.8  48006.1 -98809  48098.8 -98982.4  48223.6 -99134.5
-            48375.7 -99259.3  48549.1 -99352  48737.3 -99409.1  48933.1 -99428.3
-            85877.4 -99428.3  89039.7 -96266  206845 -96266  210007 -99428.3
-            261252 -99428.3  261447 -99409  261636 -99351.9  261809 -99259.2
-            261961 -99134.4  262086 -98982.4  262179 -98808.9  262236 -98620.7
-            262255 -98424.9  262236 -98229.2  262179 -98040.9  262086 -97867.5
-            261961 -97715.4  261809 -97590.6  261636 -97497.9  261447 -97440.8
-            261252 -97421.5  211201 -97421.5  208039 -94259.4  87845.9 -94259.4))
-    (keepout "" (polygon signal 0  34658.3 -59321.7  34462.6 -59341  34274.3 -59398.1  34100.9 -59490.8
-            33948.8 -59615.6  33824 -59767.6  33731.3 -59941.1  33674.2 -60129.3
-            33654.9 -60325.1  33674.2 -60520.8  33731.3 -60709.1  33824 -60882.5
-            33948.8 -61034.6  34100.9 -61159.4  34274.3 -61252.1  34462.6 -61309.2
-            34658.3 -61328.5  261252 -61328.3  261447 -61309  261636 -61251.9
-            261809 -61159.2  261961 -61034.4  262086 -60882.4  262179 -60708.9
-            262236 -60520.7  262255 -60324.9  262236 -60129.2  262179 -59940.9
-            262086 -59767.5  261961 -59615.4  261809 -59490.6  261636 -59397.9
-            261447 -59340.8  261252 -59321.5  34658.3 -59321.7))
+    (keepout "" (polygon B.Cu 0  170942 -61722  125603 -61722  125603 -53975  170942 -53975
+            170942 -61722))
+    (keepout "" (polygon B.Cu 0  278638 -113030  260363 -113030  260363 -102870  278638 -102870
+            278638 -113030))
     (via "Via[0-1]_800:400_um")
     (rule
       (width 250)
@@ -70,15 +54,20 @@
   )
   (placement
     (component Infinity:InfinityText
-      (place G3 231318 -113741 back 0 (PN LOGO))
-      (place G1 269050 -107798 back 180 (PN LOGO))
-      (place G2 269088 -107798 front 0 (PN LOGO))
+      (place G*** 153124 -57835.8 back 0 (PN LOGO))
+      (place G1 269392 -107950 back 180 (PN LOGO))
+    )
+    (component Infinity:SW_MxHotswap_1.25u
+      (place SW15 26503.3 -69850 front 0 (PN SW_Push))
+      (place SW48 226517 -107950 front 0 (PN SW_Push))
+      (place SW43 69367.4 -107950 front 0 (PN SW_Push))
+      (place SW39 250341 -88900 front 0 (PN SW_Push))
     )
     (component nrfmicro:connector_swd
-      (place J2 38023.7 -109639 front 90 (PN Conn_01x04))
+      (place J2 40881.3 -116319 front 0 (PN Conn_01x04))
     )
     (component nrfmicro:connectro_bat
-      (place J3 23876 -57848.5 back 270 (PN Conn_01x02))
+      (place J3 21996.4 -57848.5 back 270 (PN Conn_01x02))
     )
     (component "Used_Footprints:Diode_SMD_SOD-123"
       (place D48 256337 -104521 front 90 (PN 1n4148))
@@ -143,12 +132,6 @@
       (place SW28 31265.8 -88900 front 0 (PN SW_Push))
       (place SW27 264628 -69850 front 0 (PN SW_Push))
     )
-    (component Infinity:SW_MxHotswap_1.25u
-      (place SW48 226517 -107950 front 0 (PN SW_Push))
-      (place SW43 69367.4 -107950 front 0 (PN SW_Push))
-      (place SW39 250341 -88900 front 0 (PN SW_Push))
-      (place SW15 26503.3 -69850 front 0 (PN SW_Push))
-    )
     (component Infinity:SW_MxHotswap_1u
       (place SW49 247953 -107950 front 0 (PN SW_Push))
       (place SW47 205092 -107950 front 0 (PN SW_Push))
@@ -205,7 +188,7 @@
       (place SW51 16090.9 -57848.5 back 180 (PN "MSK-12C02"))
     )
     (component "Keebio-Parts:SW_SPST_TL3342"
-      (place SW50 44564.3 -92202 back 90 (PN SW_Push))
+      (place SW50 51257.2 -114313 back 0 (PN SW_Push))
     )
     (component Resistor_SMD:R_0603_1608Metric
       (place R9 31229.3 -111912 front 180 (PN 100K))
@@ -235,6 +218,34 @@
   )
   (library
     (image Infinity:InfinityText
+    )
+    (image Infinity:SW_MxHotswap_1.25u
+      (outline (path signal 120  8445.5 3429  8413.75 3374.01  8350.25 3374.01  8318.5 3429
+            8350.25 3483.99  8413.75 3483.99  8445.5 3429))
+      (outline (path signal 150  5000 7000  7000 7000))
+      (outline (path signal 150  7000 7000  7000 5000))
+      (outline (path signal 150  -11906.2 9525  11906.2 9525))
+      (outline (path signal 150  -7000 -5000  -7000 -7000))
+      (outline (path signal 150  11906.2 9525  11906.2 -9525))
+      (outline (path signal 150  11906.2 -9525  -11906.2 -9525))
+      (outline (path signal 150  -5000 7000  -7000 7000))
+      (outline (path signal 150  -7000 -7000  -5000 -7000))
+      (outline (path signal 150  -7000 7000  -7000 5000))
+      (outline (path signal 150  7000 -7000  7000 -5000))
+      (outline (path signal 150  5000 -7000  7000 -7000))
+      (outline (path signal 150  -11906.2 -9525  -11906.2 9525))
+      (pin Rect[B]Pad_2550x2500_um 1 -7085 2540)
+      (pin Rect[B]Pad_2550x2500_um 2 5842 5080)
+      (keepout "" (circle F.Cu 1750 5080 0))
+      (keepout "" (circle B.Cu 1750 5080 0))
+      (keepout "" (circle F.Cu 3000 2540 5080))
+      (keepout "" (circle B.Cu 3000 2540 5080))
+      (keepout "" (circle F.Cu 3000 -3810 2540))
+      (keepout "" (circle B.Cu 3000 -3810 2540))
+      (keepout "" (circle F.Cu 3987.8))
+      (keepout "" (circle B.Cu 3987.8))
+      (keepout "" (circle F.Cu 1750 -5080 0))
+      (keepout "" (circle B.Cu 1750 -5080 0))
     )
     (image nrfmicro:connector_swd
       (pin Round[A]Pad_1270_um 4 3810 0)
@@ -390,34 +401,6 @@
       (keepout "" (circle B.Cu 3987.8))
       (keepout "" (circle F.Cu 3000 2540 5080))
       (keepout "" (circle B.Cu 3000 2540 5080))
-    )
-    (image Infinity:SW_MxHotswap_1.25u
-      (outline (path signal 120  8445.5 3429  8413.75 3374.01  8350.25 3374.01  8318.5 3429
-            8350.25 3483.99  8413.75 3483.99  8445.5 3429))
-      (outline (path signal 150  5000 7000  7000 7000))
-      (outline (path signal 150  7000 7000  7000 5000))
-      (outline (path signal 150  -11906.2 9525  11906.2 9525))
-      (outline (path signal 150  -7000 -5000  -7000 -7000))
-      (outline (path signal 150  11906.2 9525  11906.2 -9525))
-      (outline (path signal 150  11906.2 -9525  -11906.2 -9525))
-      (outline (path signal 150  -5000 7000  -7000 7000))
-      (outline (path signal 150  -7000 -7000  -5000 -7000))
-      (outline (path signal 150  -7000 7000  -7000 5000))
-      (outline (path signal 150  7000 -7000  7000 -5000))
-      (outline (path signal 150  5000 -7000  7000 -7000))
-      (outline (path signal 150  -11906.2 -9525  -11906.2 9525))
-      (pin Rect[B]Pad_2550x2500_um 1 -7085 2540)
-      (pin Rect[B]Pad_2550x2500_um 2 5842 5080)
-      (keepout "" (circle F.Cu 1750 5080 0))
-      (keepout "" (circle B.Cu 1750 5080 0))
-      (keepout "" (circle F.Cu 3000 2540 5080))
-      (keepout "" (circle B.Cu 3000 2540 5080))
-      (keepout "" (circle F.Cu 3000 -3810 2540))
-      (keepout "" (circle B.Cu 3000 -3810 2540))
-      (keepout "" (circle F.Cu 3987.8))
-      (keepout "" (circle B.Cu 3987.8))
-      (keepout "" (circle F.Cu 1750 -5080 0))
-      (keepout "" (circle B.Cu 1750 -5080 0))
     )
     (image Infinity:SW_MxHotswap_1u
       (outline (path signal 120  8445.5 3429  8413.75 3374.01  8350.25 3374.01  8318.5 3429
@@ -857,7 +840,7 @@
         D17-1@1 D16-1 D16-1@1 D15-1 D15-1@1 U1-36)
     )
     (net "Net-(D15-Pad2)"
-      (pins D15-2 D15-2@1 SW15-2)
+      (pins SW15-2 D15-2 D15-2@1)
     )
     (net "Net-(D16-Pad2)"
       (pins D16-2 D16-2@1 SW16-2)
@@ -1028,7 +1011,7 @@
       (pins U3-3 R8-2)
     )
     (net /P1.11
-      (pins SW28-1 SW15-1 SW1-1 U1-1)
+      (pins SW15-1 SW28-1 SW1-1 U1-1)
     )
     (net /P0.03
       (pins SW29-1 SW16-1 SW2-1 U1-3)
