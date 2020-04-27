@@ -87,7 +87,7 @@
       (place J2 42583.1 -115481 front 0 (PN Conn_01x04))
     )
     (component nrfmicro:connectro_bat
-      (place J3 34886.9 -55930.8 back 90 (PN Conn_01x02))
+      (place J3 40855.9 -75577.7 back 90 (PN Conn_01x02))
     )
     (component "Used_Footprints:Diode_SMD_SOD-123"
       (place D48 256337 -104521 front 90 (PN 1n4148))
