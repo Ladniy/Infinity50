@@ -2828,7 +2828,7 @@
   )
 
   (module nrfmicro:connectro_bat (layer B.Cu) (tedit 5EA65109) (tstamp 5EA6E9BC)
-    (at 34.8869 55.9308 270)
+    (at 40.8559 75.5777 270)
     (path /5DA92B59)
     (fp_text reference J3 (at 0 -1.7145 270) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.15)))
