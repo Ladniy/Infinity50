@@ -1,0 +1,3 @@
+Ladniy
+DESKTOP-UBIJFO5 
+4 мая 2020 г.  4:10:09
