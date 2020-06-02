@@ -1067,39 +1067,39 @@ Connection ~ 9800 2380
 Wire Wire Line
 	9800 2380 9300 2380
 Text Label 3900 1130 1    50   ~ 0
-COL1
+Col1
 Text Label 4400 1130 1    50   ~ 0
-COL2
+Col2
 Text Label 4900 1130 1    50   ~ 0
-COL3
+Col3
 Text Label 5400 1130 1    50   ~ 0
-COL4
+Col4
 Text Label 5900 1130 1    50   ~ 0
-COL5
+Col5
 Text Label 6400 1130 1    50   ~ 0
-COL6
+Col6
 Text Label 6900 1130 1    50   ~ 0
-COL7
+Col7
 Text Label 7400 1130 1    50   ~ 0
-COL8
+Col8
 Text Label 7900 1130 1    50   ~ 0
-COL9
+Col9
 Text Label 8400 1130 1    50   ~ 0
-COL10
+Col10
 Text Label 8900 1130 1    50   ~ 0
-COL11
+Col11
 Text Label 9400 1130 1    50   ~ 0
-COL12
+Col12
 Text Label 9900 1130 1    50   ~ 0
-COL13
+Col13
 Text Label 10400 1130 1    50   ~ 0
-COL14
+Col14
 Text Label 10900 1380 0    50   ~ 0
-ROWA
+RowA
 Text Label 10400 1880 0    50   ~ 0
-ROWB
+RowB
 Text Label 10400 2380 0    50   ~ 0
-ROWC
+RowC
 Wire Wire Line
 	10400 2380 10300 2380
 Connection ~ 10300 2380
@@ -1382,7 +1382,7 @@ Connection ~ 9300 2880
 Wire Wire Line
 	9300 2880 10300 2880
 Text Label 10400 2880 0    50   ~ 0
-ROWD
+RowD
 Wire Wire Line
 	10400 2880 10300 2880
 Connection ~ 10300 2880
@@ -1398,21 +1398,21 @@ F 3 "~" V 6300 2780 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L promicro:ProMicro U?
+L promicro:ProMicro U1
 U 1 1 5ED7E469
 P 2130 2120
-F 0 "U?" H 2130 3157 60  0000 C CNN
-F 1 "ProMicro" H 2130 3051 60  0000 C CNN
+F 0 "U1" H 2130 3157 60  0000 C CNN
+F 1 "ProMicro" H 2130 3070 60  0000 C CNN
 F 2 "" H 2230 1070 60  0000 C CNN
 F 3 "" H 2230 1070 60  0000 C CNN
 	1    2130 2120
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 5ED825B3
 P 3050 1470
-F 0 "#PWR?" H 3050 1220 50  0001 C CNN
+F 0 "#PWR0101" H 3050 1220 50  0001 C CNN
 F 1 "GND" V 3050 1360 50  0000 R CNN
 F 2 "" H 3050 1470 50  0001 C CNN
 F 3 "" H 3050 1470 50  0001 C CNN
@@ -1420,10 +1420,10 @@ F 3 "" H 3050 1470 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0102
 U 1 1 5ED85438
 P 1260 1670
-F 0 "#PWR?" H 1260 1420 50  0001 C CNN
+F 0 "#PWR0102" H 1260 1420 50  0001 C CNN
 F 1 "GND" V 1260 1560 50  0000 R CNN
 F 2 "" H 1260 1670 50  0001 C CNN
 F 3 "" H 1260 1670 50  0001 C CNN
@@ -1431,10 +1431,10 @@ F 3 "" H 1260 1670 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0103
 U 1 1 5ED8AD67
 P 3050 1670
-F 0 "#PWR?" H 3050 1520 50  0001 C CNN
+F 0 "#PWR0103" H 3050 1520 50  0001 C CNN
 F 1 "VCC" V 3050 1780 50  0000 L CNN
 F 2 "" H 3050 1670 50  0001 C CNN
 F 3 "" H 3050 1670 50  0001 C CNN
@@ -1443,25 +1443,25 @@ F 3 "" H 3050 1670 50  0001 C CNN
 $EndComp
 NoConn ~ 2830 1370
 Text Label 1430 1370 2    50   ~ 0
-COL1
+Col1
 Text Label 1430 1470 2    50   ~ 0
-COL2
+Col2
 Text Label 1430 1770 2    50   ~ 0
-COL3
+Col3
 Text Label 1430 1870 2    50   ~ 0
-COL4
+Col4
 Text Label 1430 2070 2    50   ~ 0
-COL6
+Col6
 Text Label 1430 1970 2    50   ~ 0
-COL5
+Col5
 Text Label 1430 2170 2    50   ~ 0
-COL7
+Col7
 Text Label 1430 2270 2    50   ~ 0
-COL8
+Col8
 Text Label 1430 2370 2    50   ~ 0
-COL9
+Col9
 Text Label 1430 2470 2    50   ~ 0
-COL10
+Col10
 Wire Wire Line
 	1260 1670 1430 1670
 Wire Wire Line
@@ -1470,21 +1470,21 @@ Wire Wire Line
 	1260 1570 1260 1670
 Connection ~ 1260 1670
 Text Label 2830 1770 0    50   ~ 0
-COL11
+Col11
 Text Label 2830 1870 0    50   ~ 0
-COL12
+Col12
 Text Label 2830 1970 0    50   ~ 0
-COL13
+Col13
 Text Label 2830 2070 0    50   ~ 0
-COL14
+Col14
 Text Label 2830 2170 0    50   ~ 0
-ROWA
+RowA
 Text Label 2830 2270 0    50   ~ 0
-ROWB
+RowB
 Text Label 2830 2370 0    50   ~ 0
-ROWC
+RowC
 Text Label 2830 2470 0    50   ~ 0
-ROWD
+RowD
 Text Label 2830 1570 0    50   ~ 0
 RESET
 Wire Wire Line
@@ -1493,4 +1493,23 @@ Wire Wire Line
 	3050 1470 2830 1470
 Text Label 1440 3120 2    50   ~ 0
 RESET
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5ED706FC
+P 2600 2975
+F 0 "J1" H 2680 2967 50  0000 L CNN
+F 1 "Conn_01x02" H 2680 2876 50  0000 L CNN
+F 2 "" H 2600 2975 50  0001 C CNN
+F 3 "~" H 2600 2975 50  0001 C CNN
+	1    2600 2975
+	1    0    0    -1  
+$EndComp
+Text Label 2400 2975 2    50   ~ 0
+B-
+Text Label 2400 3075 2    50   ~ 0
+B+
+Text Label 1430 1270 2    50   ~ 0
+B-
+Text Label 2830 1270 0    50   ~ 0
+B+
 $EndSCHEMATC
