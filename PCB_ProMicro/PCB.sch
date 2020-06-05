@@ -1524,7 +1524,7 @@ F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1510 56
 	1    0    0    -1  
 $EndComp
 Text GLabel 2100 5600 2    50   Input ~ 0
-D-
+USB_D-
 Wire Wire Line
 	1960 5550 1960 5600
 Wire Wire Line
@@ -1533,7 +1533,7 @@ Connection ~ 1960 5600
 Wire Wire Line
 	1960 5600 1960 5650
 Text GLabel 2100 5800 2    50   Input ~ 0
-D+
+USB_D+
 Wire Wire Line
 	1960 5750 1960 5800
 Wire Wire Line
@@ -1599,4 +1599,36 @@ Wire Wire Line
 NoConn ~ 1060 6550
 NoConn ~ 1960 6150
 NoConn ~ 1960 6250
+$Comp
+L Power_Protection:USBLC6-2SC6 U?
+U 1 1 5EDE97BF
+P 3865 5775
+F 0 "U?" H 3865 6635 50  0000 C CNN
+F 1 "USBLC6-2SC6" H 3865 6560 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-6" H 3115 6175 50  0001 C CNN
+F 3 "http://www2.st.com/resource/en/datasheet/CD00050750.pdf" H 4065 6125 50  0001 C CNN
+	1    3865 5775
+	1    0    0    -1  
+$EndComp
+Text GLabel 3365 5675 0    50   Input ~ 0
+USB_D+
+Text GLabel 4365 5675 2    50   Input ~ 0
+USB_D-
+Text GLabel 3365 5875 0    50   Input ~ 0
+D+
+Text GLabel 4365 5875 2    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR?
+U 1 1 5EDF1287
+P 3865 6275
+F 0 "#PWR?" H 3865 6025 50  0001 C CNN
+F 1 "GND" H 3865 6135 50  0000 C CNN
+F 2 "" H 3865 6275 50  0001 C CNN
+F 3 "" H 3865 6275 50  0001 C CNN
+	1    3865 6275
+	1    0    0    -1  
+$EndComp
+Text GLabel 3865 5275 1    50   Input ~ 0
+VBUS
 $EndSCHEMATC
