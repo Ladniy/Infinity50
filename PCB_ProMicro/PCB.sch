@@ -1494,10 +1494,10 @@ Wire Wire Line
 Text Label 1440 3120 2    50   ~ 0
 RESET
 $Comp
-L Connector_Generic:Conn_01x02 J1
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5ED706FC
 P 2600 2975
-F 0 "J1" H 2680 2967 50  0000 L CNN
+F 0 "J2" H 2680 2967 50  0000 L CNN
 F 1 "Conn_01x02" H 2680 2876 50  0000 L CNN
 F 2 "" H 2600 2975 50  0001 C CNN
 F 3 "~" H 2600 2975 50  0001 C CNN
@@ -1512,4 +1512,91 @@ Text Label 1430 1270 2    50   ~ 0
 B-
 Text Label 2830 1270 0    50   ~ 0
 B+
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 5EDB247E
+P 1360 5650
+F 0 "J1" H 1467 6517 50  0000 C CNN
+F 1 "USB-C" H 1467 6426 50  0000 C CNN
+F 2 "" H 1510 5650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1510 5650 50  0001 C CNN
+	1    1360 5650
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 5600 2    50   Input ~ 0
+D-
+Wire Wire Line
+	1960 5550 1960 5600
+Wire Wire Line
+	2100 5600 1960 5600
+Connection ~ 1960 5600
+Wire Wire Line
+	1960 5600 1960 5650
+Text GLabel 2100 5800 2    50   Input ~ 0
+D+
+Wire Wire Line
+	1960 5750 1960 5800
+Wire Wire Line
+	2100 5800 1960 5800
+Connection ~ 1960 5800
+Wire Wire Line
+	1960 5800 1960 5850
+$Comp
+L power:GND #PWR?
+U 1 1 5EDC59F6
+P 1360 6550
+F 0 "#PWR?" H 1360 6300 50  0001 C CNN
+F 1 "GND" H 1360 6405 50  0000 C CNN
+F 2 "" H 1360 6550 50  0001 C CNN
+F 3 "" H 1360 6550 50  0001 C CNN
+	1    1360 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5EDC6E57
+P 2060 5250
+F 0 "R1" V 1990 5250 50  0000 C CNN
+F 1 "5.1k" V 2060 5250 43  0000 C CNN
+F 2 "" H 2060 5250 50  0001 C CNN
+F 3 "~" H 2060 5250 50  0001 C CNN
+	1    2060 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 5EDC82FE
+P 2060 5350
+F 0 "R2" V 2130 5350 50  0000 C CNN
+F 1 "5.1k" V 2060 5350 43  0000 C CNN
+F 2 "" H 2060 5350 50  0001 C CNN
+F 3 "~" H 2060 5350 50  0001 C CNN
+	1    2060 5350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5EDCBE4E
+P 2250 5300
+F 0 "#PWR?" H 2250 5050 50  0001 C CNN
+F 1 "GND" H 2330 5160 50  0000 R CNN
+F 2 "" H 2250 5300 50  0001 C CNN
+F 3 "" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2160 5250 2160 5300
+Wire Wire Line
+	2250 5300 2160 5300
+Connection ~ 2160 5300
+Wire Wire Line
+	2160 5300 2160 5350
+Text GLabel 2020 5050 2    50   Input ~ 0
+VBUS
+Wire Wire Line
+	2020 5050 1960 5050
+NoConn ~ 1060 6550
+NoConn ~ 1960 6150
+NoConn ~ 1960 6250
 $EndSCHEMATC

@@ -1402,7 +1402,7 @@ L promicro:ProMicro U1
 U 1 1 5ED7E469
 P 2130 2120
 F 0 "U1" H 2130 3157 60  0000 C CNN
-F 1 "ProMicro" H 2130 3051 60  0000 C CNN
+F 1 "ProMicro" H 2130 3070 60  0000 C CNN
 F 2 "" H 2230 1070 60  0000 C CNN
 F 3 "" H 2230 1070 60  0000 C CNN
 	1    2130 2120
@@ -1493,4 +1493,23 @@ Wire Wire Line
 	3050 1470 2830 1470
 Text Label 1440 3120 2    50   ~ 0
 RESET
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5ED706FC
+P 2600 2975
+F 0 "J1" H 2680 2967 50  0000 L CNN
+F 1 "Conn_01x02" H 2680 2876 50  0000 L CNN
+F 2 "" H 2600 2975 50  0001 C CNN
+F 3 "~" H 2600 2975 50  0001 C CNN
+	1    2600 2975
+	1    0    0    -1  
+$EndComp
+Text Label 2400 2975 2    50   ~ 0
+B-
+Text Label 2400 3075 2    50   ~ 0
+B+
+Text Label 1430 1270 2    50   ~ 0
+B-
+Text Label 2830 1270 0    50   ~ 0
+B+
 $EndSCHEMATC
